@@ -5,8 +5,8 @@ Website summarizer using Ollama instead of OpenAI.
 from openai import OpenAI
 from scraper import fetch_website_contents
 
-OLLAMA_BASE_URL = "http://localhost:11434/v1"
-MODEL = "llama3.2"
+OLLAMA_BASE_URL = "http://192.168.1.6:11434"
+MODEL = "gemma3:270m"
 
 system_prompt = """
 You are a snarky assistant that analyzes the contents of a website,
@@ -44,7 +44,7 @@ def summarize(url):
 def main():
     """Main entry point for testing."""
     url = input("Enter a URL to summarize: ")
-    print("\nFetching and summarizing...\n")
+    print("\nFetching and summarizing... [{url}]\n")
     summary = summarize(url)
     print(summary)
 
