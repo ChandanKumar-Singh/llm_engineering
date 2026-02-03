@@ -11,7 +11,7 @@ torch
 transformers
 tqdm
 openai
-gradio
+gradio # important for ui -> day2
 langchain
 langchain-core
 langchain-text-splitters
@@ -21,14 +21,14 @@ langchain-community
 datasets==3.6.0
 matplotlib
 google-generativeai
-anthropic
+anthropic # Claude
 chromadb
 plotly
 jupyter-dash
 beautifulsoup4
 pydub
 modal
-ollama
+ollama # Llama
 psutil
 setuptools
 speedtest-cli
