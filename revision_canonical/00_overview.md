@@ -22,3 +22,19 @@ Shared utilities are refactored into `reference_code/` for clean imports.
 ## Setup
 1. Copy `.env.example` to `.env` and add your keys (OPENAI_API_KEY, etc.).
 2. Run notebooks in order.
+
+## 🧠 Learnings Recap & Strategy Map
+
+The entire 8-week curriculum is distilled into these high-leverage patterns:
+
+| Core Concept | Where it lives | Implementation Details |
+| :--- | :--- | :--- |
+| **Generative UI** | `Module 1` | Using Gradio/Streamlit to wrap LLM calls for rapid prototyping. |
+| **Structured Data Extraction** | `Module 1` | Enforcing schema with Pydantic and JSON mode for reliable data processing. |
+| **Vector Search (RAG)** | `Module 2` | Embedding documents, indexing in ChromaDB, and semantic retrieval. |
+| **Multi-Modality** | `Module 2` | Processing Audio (Whisper) alongside Text for rich context. |
+| **Code Generation** | `Module 3` | "Generator -> Executor -> Reflexion" loops for self-healing code agents. |
+| **Model Customization** | `Module 4` | Fine-tuning (QLoRA) vs Prompt Engineering tradeoffs. |
+| **AI Safety** | `Module 4` | "LLM-as-a-Judge" patterns for evaluating outputs against safety guidelines. |
+| **Multi-Agent Orchestration** | `Module 5` | Coordinating specialized agents (Scanner, Pricer, Planner) to solve complex workflows. |
+| **Production Patterns** | `Reference Code` | Shared libraries, modular imports, and clean evaluation harnesses.

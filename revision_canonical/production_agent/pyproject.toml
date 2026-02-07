@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "production_agent"
+version = "0.1.0"
+description = "A production-grade ReAct agent framework distilled from LLM Engineering."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "openai>=1.0.0",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "rich>=13.0.0",
+    "typer>=0.9.0",
+]
+
+[project.scripts]
+agent = "production_agent.main:app"
